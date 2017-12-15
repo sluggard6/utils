@@ -1,0 +1,9 @@
+/.gradle/
+.idea
+.classpath
+.project
+.settings
+bin
+*.iml
+th-api/src/main/resources/env/local
+out
