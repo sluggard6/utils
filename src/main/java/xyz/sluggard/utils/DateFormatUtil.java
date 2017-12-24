@@ -12,7 +12,7 @@ public class DateFormatUtil {
 
     private static final String TIME_PATTERN = "hh:mm:ss";
 
-    private static ThreadLocal<SimpleDateFormat> dataTimeFormat = new ThreadLocal(){
+    private static ThreadLocal<SimpleDateFormat> dataTimeFormat = new ThreadLocal<SimpleDateFormat>(){
 
         @Override
         protected SimpleDateFormat initialValue() {
@@ -20,7 +20,7 @@ public class DateFormatUtil {
         }
     };
 
-    private static ThreadLocal<SimpleDateFormat> dataFormat = new ThreadLocal(){
+    private static ThreadLocal<SimpleDateFormat> dataFormat = new ThreadLocal<SimpleDateFormat>(){
 
         @Override
         public SimpleDateFormat initialValue() {
@@ -28,7 +28,7 @@ public class DateFormatUtil {
         }
     };
 
-    private static ThreadLocal<SimpleDateFormat> timeFormat = new ThreadLocal(){
+    private static ThreadLocal<SimpleDateFormat> timeFormat = new ThreadLocal<SimpleDateFormat>(){
 
         @Override
         public SimpleDateFormat initialValue() {
